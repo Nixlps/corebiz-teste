@@ -36,7 +36,7 @@ Para gerar o bundle de produção digite
 
 Os componentes que serão utilizados em mais de uma página ficam na pasta components.
 
-Os componentes particulares de cada página ficam dentro de sua própria pasta. 
+Os componentes exclusivos de uma página ficam dentro de sua respectiva pasta. Caso alguma nova página for adicionada e necessite de um destes componentes, o mesmo deve ser transferido para a pasta components. 
 
 ## Performance
 
