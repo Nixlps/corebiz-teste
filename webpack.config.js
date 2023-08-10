@@ -21,7 +21,7 @@ module.exports = {
             },
 
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.(css|s[ac]ss)$/i,
                 use: [
                     'style-loader', 
                     'css-loader',
@@ -37,6 +37,15 @@ module.exports = {
 
             {
                 test: /\.(png|jpe?g|gif)$/i,
+                type: 'asset/resource',
+                use: [
+                  {
+                    loader: 'file-loader'
+                  }
+                ]
+            },
+            {
+                test: /\.(woff(2)?|ttf|eot|)?$/,
                 use: [
                   {
                     loader: 'file-loader',
