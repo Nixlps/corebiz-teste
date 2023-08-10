@@ -1,5 +1,8 @@
 .product-display{
     font-family: 'Nanito';
+    .slick-dots{
+        bottom: -55px !important;
+    }
     @media screen and (min-width:1024px) {
         margin: auto;
         max-width: 700px;
@@ -33,6 +36,7 @@
         color: #7A7A7A;
 
         .image{
+            height: 120px;
             @media screen and (min-width: 1024px) {
                 height: 210px;
                 margin-bottom: 20px;
@@ -51,17 +55,23 @@
             color: #7A7A7A;
 
             &:hover{
-                background-color: #7A7A7A;
-                color: #FFF;
+                background-color: #E6E8EA;
             }
 
             .title{
-                width: 200px;
-                height: 32px;
+                width: 120px;
                 margin: auto;
+                font-size: 12px;
+                margin-bottom: 10px;
+                height: 36px;
                 @media screen and (min-width: 1024px) {
-                    margin-bottom: 10px;
+                    width: 200px;
+                    height: 32px;
                 }
+            }
+
+            .rating-stars{
+                font-size: 12px;
             }
     
             .rating-stars path{
@@ -70,8 +80,11 @@
             }
 
             .rating-number{
+                font-size: 10px;
                 margin-bottom: 10px;
-                font-size: 12px;
+                @media screen and (min-width: 1024px) {
+                    font-size: 12px;
+                }
             }
 
             .price{
