@@ -4,8 +4,8 @@ import './HeroSlider.scss';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import wave from '../../assets/images/wave.png';
-
 import banner from '../../assets/images/banner.png';
+
 
 function HeroSlider(){
 
@@ -47,8 +47,6 @@ function HeroSlider(){
                 <div style={{ backgroundImage: `url(${banner})`}}></div>
             </div>
         </Slider>
-
-        
     )
 }
 

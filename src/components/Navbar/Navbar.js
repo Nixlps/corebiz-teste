@@ -15,7 +15,7 @@ function Navbar(){
     }
 
     return(
-        <header>
+        <header className='container-padding'>
             <nav>
                 <div className={`menu-mobile-btn ${navMobile ? 'active' : ''}`} onClick={navClickHandler}>
                     <span></span>
