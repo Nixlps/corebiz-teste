@@ -1,10 +1,15 @@
+import '../public/reset.scss';
+import '../public/common.scss';
+
+import Navbar from './components/Navbar/Navbar';
+
 import './App.scss';
 
 function App(){
     return (
-        <div>
-            <h1 className="teste">Hello World!</h1>
-        </div>
+        <>
+            <Navbar />
+        </>
     );
 }
 

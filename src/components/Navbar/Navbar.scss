@@ -1,0 +1,121 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-mobile-btn {
+  cursor: pointer;
+  position: relative;
+  padding: 5px 0;
+  width: 25px;
+}
+
+.menu-mobile-btn span {
+  position: absolute;
+  display: block;
+  height: 3px;
+  width: 25px;
+  background-color: #000;
+  transform: rotate(0);
+  transition: all 200ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+}
+
+.menu-mobile-btn span:first-child {
+  top: 0px;
+}
+
+.menu-mobile-btn span:nth-child(2) {
+  top: 8px;
+}
+
+.menu-mobile-btn span:last-child {
+  top: 16px;
+}
+
+.menu-mobile-btn.active span:first-child {
+  transform: translateY(5px) rotate(45deg);
+}
+
+.menu-mobile-btn.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-mobile-btn.active span:last-child {
+  transform: translateY(-11px) rotate(-45deg);
+}
+
+// When menu mobile is open
+
+.menu-mobile {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    background-color: #F2F2F2;
+    width: 0px;
+    height: calc(100vh);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+}
+
+.menu-mobile.active {
+  width: 100%;
+  padding: 40px;
+}
+
+.logo{
+  width: 100px;
+}
+
+.logo svg{
+  margin-top: -5px;
+}
+
+.login-btn{
+  cursor: pointer;
+}
+
+.login-btn span{
+  vertical-align: top;
+  margin-left: 5px;
+}
+
+.login-btn-desktop{
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  header{
+    position: relative;
+    max-width: 1024px;
+    margin: auto;
+  }
+
+  .menu-mobile-btn{
+    display: none;
+  }
+
+  nav{
+    justify-content: space-between;
+
+    .logo svg{
+      width: 200px;
+    }
+
+    .desk-container{
+      display: flex;
+      
+      .login-btn-desktop{
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+
+        span{
+          margin-left: 5px;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}
+
+

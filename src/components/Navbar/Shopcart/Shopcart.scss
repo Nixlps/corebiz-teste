@@ -1,0 +1,23 @@
+.shopcart{
+    display: flex;
+    cursor: pointer;
+}
+
+.shopcart svg{
+    vertical-align: bottom;
+}
+
+.shopcart-counter{
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    font-size: 10px;
+    background-color: #F8475F;
+    padding: 3px;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
