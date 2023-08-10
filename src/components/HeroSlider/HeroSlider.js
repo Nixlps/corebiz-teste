@@ -13,7 +13,7 @@ function HeroSlider(){
         dots: true,
         infinite: true,
         speed: 500,
-        autoplay: false,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false
@@ -26,7 +26,6 @@ function HeroSlider(){
                     <div className="hero-item" key={item.id}>
                         <img className="black-wave" src={wave} alt="black-wave" />
                         <h1> {item.smalltext} <span> {item.bigtext} </span></h1>
-                        {console.log(item.img)}
                         <div style={{ backgroundImage: `url(${item.imgsrc})`}}></div>
                     </div>
                 )

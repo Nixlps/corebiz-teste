@@ -8,6 +8,11 @@ module.exports = {
         port: 3010, 
         compress: true,
         open: true,
+        headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "*",
+            "Access-Control-Allow-Headers": "*"
+          },
     },
 
     module: {
