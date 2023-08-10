@@ -1,14 +1,12 @@
 import './Shopcart.scss';
 import Cart from '../../../assets/icons/cart.svg';
 
-function Shopcart(){
-
-    var shopcartCounter = 0;
+function Shopcart(props){
 
     return(
         <div className="shopcart">
             <Cart />
-            <span className="shopcart-counter">{shopcartCounter}</span>
+            <span className="shopcart-counter">{props.cartCounter}</span>
         </div>
     )
 }

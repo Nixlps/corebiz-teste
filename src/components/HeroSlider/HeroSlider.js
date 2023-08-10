@@ -13,7 +13,7 @@ function HeroSlider(){
         dots: true,
         infinite: true,
         speed: 500,
-        autoplay: false,
+        autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false

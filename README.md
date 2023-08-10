@@ -42,3 +42,6 @@ Para gerar o bundle de produção digite
 
 Utilizando a biblioteca [Web Vitals](https://www.npmjs.com/package/web-vitals#import-web-vitals-from-npm), acompanhamos as métricas de Core Web Vitals no console do navegador conforme a imagem abaixo. Também é possível enviar os dados para o GA.
 
+## Observações
+
+Como não existe o campo de desconto no JSON dos produtos, não soube como implementar de forma dinâmica o desconto com a tag na foto do produto.

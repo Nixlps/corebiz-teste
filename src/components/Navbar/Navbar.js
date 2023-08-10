@@ -6,7 +6,7 @@ import './Navbar.scss';
 import Logo from '../../assets/images/logo.svg';
 import User from '../../assets/icons/user.svg';
 
-function Navbar(){
+function Navbar(props){
 
     const [navMobile, setNavMobile] = useState(false);
 
@@ -33,7 +33,7 @@ function Navbar(){
                         <span>Minha Conta</span>
                     </div>
 
-                    <Shopcart />
+                    <Shopcart cartCounter={props.cartCounter}/>
                 </div>
                 
 
