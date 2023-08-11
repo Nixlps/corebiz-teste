@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar/Navbar';
 import HeroSlider from './components/HeroSlider/HeroSlider';
 import ProductDisplay from './components/ProductDisplay/ProductDisplay';
+import NewsForm from './components/NewsForm/NewsForm';
 
 import './App.scss';
 
@@ -28,9 +29,10 @@ function App(){
 
     return (
         <>
-            <Navbar cartCounter={cartCounter}/>
+            <Navbar cartCounter={cartCounter} />
             <HeroSlider />
             <ProductDisplay cartCounter={handleClickBuyBtn}/>
+            <NewsForm />
         </>
     );
 }
