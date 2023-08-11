@@ -8,6 +8,11 @@ module.exports = {
         port: 3010, 
         compress: true,
         open: true,
+        headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "*",
+            "Access-Control-Allow-Headers": "*"
+          },
     },
 
     module: {
@@ -19,14 +24,31 @@ module.exports = {
                     loader: 'babel-loader',
                 }
             },
+
             {
-                test: /\.s[ac]ss$/i,
+                test: /\.(css|s[ac]ss)$/i,
                 use: [
                     'style-loader', 
                     'css-loader',
                     'sass-loader',
                 ]
-            }
+            },
+            
+            {
+                test: /\.svg$/i,
+                issuer: /\.[jt]sx?$/,
+                use: ['@svgr/webpack'],
+            },
+
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                type: 'asset/resource',
+            },
+
+            {
+                test: /\.(woff|woff2|eot|ttf|otf)$/i,
+                type: 'asset/resource',
+            },
         ]
     },
     plugins:[

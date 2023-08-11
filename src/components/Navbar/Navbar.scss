@@ -1,0 +1,130 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and (min-width: 1024px) {
+    justify-content: space-between;
+  }
+
+  .menu-mobile-btn {
+    cursor: pointer;
+    position: relative;
+    padding: 5px 0;
+    width: 25px;
+
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+
+    span {
+      position: absolute;
+      display: block;
+      height: 3px;
+      width: 25px;
+      background-color: #000;
+      transform: rotate(0);
+      transition: all 200ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
+
+      &:first-child {
+        top: 0px;
+      }
+
+      &:nth-child(2) {
+        top: 8px;
+      }
+
+      &:last-child {
+        top: 16px;
+      }
+    }
+
+    &.active {
+      span {
+        &:first-child {
+          transform: translateY(5px) rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:last-child {
+          transform: translateY(-11px) rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  .menu-mobile {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    background-color: #f2f2f2;
+    width: 0px;
+    height: calc(100vh);
+    transition: all 0.3s ease-in;
+    overflow: hidden;
+    z-index: 100;
+    margin: -10px;
+
+    &.active{
+      width: 100%;
+      padding: 40px;
+    }
+
+    .logo {
+      width: 100px;
+
+      svg{
+        margin-top: -5px;
+
+        @media screen and (min-width: 1024px) {
+          width: 200px;
+        }
+      }
+    }
+
+    .login-btn {
+      cursor: pointer;
+
+      span{
+        vertical-align: top;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .login-btn-desktop {
+    display: none;
+  }
+
+  .desk-container {
+    @media screen and (min-width: 1024px){
+      display: flex;
+    }
+
+    .login-btn-desktop {
+      @media screen and (min-width: 1024px){
+        display: block;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+
+      span{
+        @media screen and (min-width: 1024px){
+          margin-left: 5px;
+          vertical-align: top;
+      }
+    }
+  }
+} 
+
+}
+
+@media (min-width: 1024px) {
+  header {
+    position: relative;
+    max-width: 1024px;
+    margin: auto;
+  }
+}

@@ -1,0 +1,80 @@
+.hero-item{
+    position: relative;
+
+    div{
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        filter: brightness(0.4);
+
+        @media screen and (min-width:1024px) {
+            height: 60vh;
+            width: 60%;
+            margin-left: auto;
+            filter: brightness(0.8);
+        }
+    }
+
+    .black-wave{
+        display: none;
+
+        @media screen and (min-width:1024px) {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            height: 100%;
+            width: 45%;
+        }
+    }
+
+    h1{
+        font-size: 19px;
+        font-family: 'Nunito Black';
+        color: #fff;
+        position: absolute;
+        z-index: 1;
+        top: 25%;
+        left: 30px;
+        width: 60%;
+
+        @media screen and (min-width:1024px) {
+            font-size: 30px;
+            max-width: 400px;
+            top: 30%;
+            left: 10%;
+        }
+
+        span{
+            font-size: 27px;
+            display: block;
+            margin-top: 10px;
+            
+            @media screen and (min-width:1024px) {
+                font-size: 45px;
+            }
+        }
+    }
+
+}
+
+.slick-dots{
+    bottom: 15px !important;
+
+    li > button::before{
+        color: #bdbdbd !important;
+        font-size: 8px !important;
+
+        @media screen and (min-width:1024px) {
+            font-size: 15px !important;
+        }
+    }
+    
+    li.slick-active > button::before {
+        color: #F8475F !important;
+      }
+
+    @media screen and (min-width: 1024px){
+        bottom: 25px !important;
+    }
+}
