@@ -8,9 +8,6 @@ import ProductDisplay from './components/ProductDisplay/ProductDisplay';
 import NewsForm from './components/NewsForm/NewsForm';
 import Footer from './components/Footer/Footer';
 
-import './App.scss';
-
-
 function App(){
     const [cartCounter,setCartCounter] = useState(0);
     

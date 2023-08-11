@@ -20,7 +20,7 @@ function HeroSlider(){
     };
 
     return(
-        <Slider {...settings} style={{ marginTop: '30px'}}>
+        <Slider {...settings}>
             {content.map(item => {
                 return(
                     <div className="hero-item" key={item.id}>
