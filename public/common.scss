@@ -18,6 +18,16 @@
     src: url('/src/assets/fonts/Nunito/Nunito-ExtraBold.ttf') format('woff2');
 }
 
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('/src/assets/fonts/Lato/Lato-Bold.ttf') format('woff2');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('/src/assets/fonts/Lato/Lato-Regular.ttf') format('woff2');
+}
+
 .container-padding{
     padding: calc(8px + 1.5625vw);
     max-width: 1800px;
