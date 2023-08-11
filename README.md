@@ -1,7 +1,5 @@
 # Teste Corebiz :nerd_face:
 
-[Demo Link](www.google.com.br)
-
 ## Objetivo
 
 Desenvolver um projeto de ecommerce baseando-se no layout e APIs abaixo  
