@@ -29,6 +29,12 @@
         }
     }
 
+    .slick-arrow{
+        &::before{
+            color: #000;
+        }
+    }
+
     .product{
         display: flex;
         flex-direction: column;

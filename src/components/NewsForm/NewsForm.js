@@ -43,7 +43,6 @@ function NewsForm(){
                 if (response.status !== 200) {
                   throw new Error(response.statusText);
                 }
-        
                 return response.json();
               })
             .then(() => {
@@ -55,7 +54,7 @@ function NewsForm(){
     return(
         <section className="newsletter container-padding" >
             <p>{formMsg}</p>
-            <form>
+            <form className={`${formMsg != 'Participe de nossas news com promoções e novidades!' ? 'disable' : ''}`}>
                 <div>
                     <input className={`${errorName != '' ? 'input-error' : ''}`} type="text" placeholder='Digite seu nome' onChange={e => setUsername(e.target.value)}/>
                     <span>{errorName}</span>
